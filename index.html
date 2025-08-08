@@ -2,12 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sample Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Ink Coffee</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to the Sample Website</h1>
-  <p>This page was created as a demonstration.</p>
+  <header class="nav">
+    <div class="logo">Black Ink Coffee</div>
+    <nav>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Freshly Roasted Coffee Delivered</h1>
+    <p>Never run out of your favorite beans again.</p>
+    <a class="cta-button" href="#shop">Shop Now</a>
+  </section>
+
+  <section id="shop" class="products">
+    <h2>Best Sellers</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product 1">
+        <h3>Morning Roast</h3>
+        <p>Smooth and bright breakfast blend.</p>
+        <a class="btn" href="#">Add to Cart</a>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product 2">
+        <h3>Dark Roast</h3>
+        <p>Rich flavor with a bold finish.</p>
+        <a class="btn" href="#">Add to Cart</a>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Product 3">
+        <h3>Decaf Blend</h3>
+        <p>All the taste without the buzz.</p>
+        <a class="btn" href="#">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Why Black Ink?</h2>
+    <p>We source ethically and roast to order for unbeatable freshness.</p>
+    <ul>
+      <li>Free shipping on subscriptions</li>
+      <li>Roasted the day it ships</li>
+      <li>Money-back guarantee</li>
+    </ul>
+  </section>
+
+  <section class="newsletter">
+    <h2>Join Our Newsletter</h2>
+    <p>Get exclusive deals and brewing tips.</p>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
+  </section>
+
+  <footer id="contact" class="footer">
+    <p>Questions? <a href="mailto:info@example.com">Contact us</a></p>
+    <p>&copy; 2023 Black Ink Coffee</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
